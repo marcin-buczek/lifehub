@@ -1,0 +1,75 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$background-color: #f4f4f4;
+
+// Reset de base
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+// Styles de l'en-tête
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 1rem;
+
+    h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+
+            li {
+                margin-right: 1rem;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Styles du contenu principal
+main {
+    padding: 2rem;
+
+    section {
+        margin-bottom: 2rem;
+
+        h2 {
+            color: $secondary-color;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+// Styles du pied de page
+footer {
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
